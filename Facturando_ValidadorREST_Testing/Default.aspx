@@ -25,6 +25,9 @@
             <div class="col-4" style="text-align:right;">ValidarSchema: </div><div class="col-8"><asp:CheckBox ID="CbxValidSchema" runat="server" Checked="false" /></div>
             <!-- <div class="col-4" style="text-align:right;">ValidarCsd: </div><div class="col-8"><asp:CheckBox ID="CbxValidCsd" runat="server" Checked="false" /></div> -->
             <!-- <div class="col-4" style="text-align:right;">ValidatLco: </div><div class="col-8"><asp:CheckBox ID="CbxVAlidLco" runat="server" Checked="false" /></div> -->
+            <div class="col-4" style="text-align:right;">Solicitar Documento: </div><div class="col-8"><asp:CheckBox ID="CbxRequestDocument" runat="server" Checked="false" /></div>
+        <div class="col-4" style="text-align:right;">Solicitar Certificado: </div><div class="col-8"><asp:CheckBox ID="CbxRequestCertificate" runat="server" Checked="false" /></div>
+        <div class="col-4" style="text-align:right;">Solicitar Timbre: </div><div class="col-8"><asp:CheckBox ID="CbxRequestTimbre" runat="server" Checked="false" /></div>
             <div class="col-12">&nbsp;</div>
         <!-- 
             <div class="col-12">Agregar propiedades extras: </div>

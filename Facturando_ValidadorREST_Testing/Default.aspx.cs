@@ -177,6 +177,33 @@ namespace IdEx.Facturando_ValidadorREST_Testing
             validaMe.ValidarSchema = CbxValidSchema.Checked;
             // validaMe.ValidarCsd = CbxValidCsd.Checked;
             // validaMe.ValidarLco = CbxVAlidLco.Checked;
+            
+            if(CbxRequestDocument.Checked)
+            {
+                validaMe.Documento = new DPVDocumento();
+            }
+            else
+            {
+                validaMe.Documento = null;
+            }
+
+            if(CbxRequestCertificate.Checked)
+            {
+                validaMe.Certificado = new DPVCertificado();
+            }
+            else
+            {
+                validaMe.Certificado = null;
+            }
+
+            if (CbxRequestTimbre.Checked)
+            {
+                validaMe.Timbre = new DPVTimbre();
+            }
+            else
+            {
+                validaMe.Timbre = null;
+            }
 
             ConsumidorValidador consumidorRest = new ConsumidorValidador();
 

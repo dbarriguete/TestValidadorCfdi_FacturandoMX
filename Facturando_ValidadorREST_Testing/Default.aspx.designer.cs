@@ -157,6 +157,33 @@ namespace IdEx.Facturando_ValidadorREST_Testing {
         protected global::System.Web.UI.WebControls.CheckBox CbxVAlidLco;
         
         /// <summary>
+        /// Control CbxRequestDocument.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CbxRequestDocument;
+        
+        /// <summary>
+        /// Control CbxRequestCertificate.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CbxRequestCertificate;
+        
+        /// <summary>
+        /// Control CbxRequestTimbre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CbxRequestTimbre;
+        
+        /// <summary>
         /// Control BtnAddExtra.
         /// </summary>
         /// <remarks>

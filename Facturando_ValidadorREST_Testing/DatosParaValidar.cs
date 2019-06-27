@@ -27,6 +27,9 @@ namespace IdEx.Facturando_ValidadorREST_Testing
         public bool ValidarSchema   { get; set;}
         // public bool ValidarCsd      { get; set;}
         // public bool ValidarLco      { get; set; }
+        public DPVDocumento Documento { get; set; }
+        public DPVTimbre Timbre { get; set; }
+        public DPVCertificado Certificado { get; set; }
 
         public NameValueCollection ExtraDataString { get; set; }
         public NameValueCollection ExtraDataNumericAndBool { get; set; }
@@ -57,6 +60,35 @@ namespace IdEx.Facturando_ValidadorREST_Testing
                                         
                                     //  " \"ValidarCsd\": " + ValidarCsd.ToString().ToLower() + ", " +
                                     //  " \"ValidarLco\": " + ValidarLco.ToString().ToLower() + " ";
+            
+            if(Documento!=null)
+            {
+                answer = answer + ", \"Documento\":  {" +
+                    " \"Documento\": " + Documento.Documento.ToString().ToLower() + ", "+
+                    " \"NumeroCertificado\": " + Documento.NumeroCertificado.ToString().ToLower() + ", " +
+                    " \"Sello\": " + Documento.Sello.ToString().ToLower() + ", " +
+                    " \"CadenaOriginal\": " + Documento.CadenaOriginal.ToString().ToLower() + ", " +
+                    " \"CadenaOriginalPac\": " + Documento.CadenaOriginalPac.ToString().ToLower() +
+                " } ";
+            }
+
+            if(Timbre!=null)
+            {
+                answer = answer + ", \"Timbre\":  {" +
+                    " \"NumeroCertificadoSat\": " + Timbre.NumeroCertificadoSat.ToString().ToLower() + ", " +
+                    " \"SelloCfd\": " + Timbre.SelloCfd.ToString().ToLower() + ", " +
+                    " \"SelloSat\": " + Timbre.SelloSat.ToString().ToLower() +
+                " } ";
+            }
+
+            if(Certificado!=null)
+            {
+                answer = answer + ", \"Certificado\":  {" +
+                    " \"Version\": " + Certificado.Version.ToString().ToLower() + ", " +
+                    " \"EmitidoPor\": " + Certificado.EmitidoPor.ToString().ToLower() + 
+                " } ";
+            }
+
 
             //se agregan los datos enviados dinámicamente
             if (ExtraDataString != null)

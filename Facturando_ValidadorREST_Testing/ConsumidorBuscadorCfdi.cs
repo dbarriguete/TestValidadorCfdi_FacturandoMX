@@ -18,6 +18,7 @@ namespace IdEx.Facturando_ValidadorREST_Testing
 
         public string ConsumirFindCfdi(DatosBuscarCfdi datos)
         {
+
             //string apiURL = "http://webapi.factura-electronica-gratis.net.100-42-52-208.hgws28.hgwin.temp.domains/API/FindCfdi";
             string apiURL = "http://localhost:61136/API/FindCfdi";
             string answer = "";

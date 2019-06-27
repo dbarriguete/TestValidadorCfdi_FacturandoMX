@@ -153,6 +153,9 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DPVCertificado.cs" />
+    <Compile Include="DPVDocumento.cs" />
+    <Compile Include="DPVTimbre.cs" />
     <Compile Include="TestAccount.aspx.cs">
       <DependentUpon>TestAccount.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
